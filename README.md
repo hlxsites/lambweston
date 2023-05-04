@@ -1,5 +1,5 @@
 # Lambweston Environment and Social Goverance Page
-Your project's description...
+AEM Franklin implementation for https://esg.lambweston.com/
 
 ## Environments
 - Preview: https://main--lambweston--hlxsites.hlx.page/
