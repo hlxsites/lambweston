@@ -2,7 +2,7 @@
 
 @font-face{
     font-family:"VAG Rounded W01";
-    src:url("../fonts/075feb04-c85d-4fa1-866a-83b1b3917c7a.woff2") format("woff2"),url("../fonts/a391ffc6-46f4-4f10-bee0-a68d3b388e49.woff") format("woff");
+    src:url("../fonts/VAG-Rounded.woff2") format("woff2"),url("../fonts/VAG-Rounded.woff") format("woff");
     font-weight:300;
     font-style:normal;
     font-display: swap;
