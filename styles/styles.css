@@ -12,18 +12,17 @@
 
 :root {
   /* fonts */
-  --heading-font-family: VAG Rounded W01, Arial, Helvetica, sans-serif;
-  --body-font-family: Arial, Helvetica, sans-serif;
+  --heading-font-family: "VAG Rounded W01", "Arial", "Helvetica", "sans-serif";
+  --body-font-family: "Arial", "Helvetica", sans-serif;
   --fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono", monospace;
 
   /* colors */
-  --text-color: #000000;
-  --link-color: #0000ee;
-  --link-hover-color: #0000ee;
-  --background-color: #ffffff;
-  --overlay-background-color: #eeeeee;
-  /* --highlight-background-color: #cccccc; */
-  --highlight-background-color: rgba(217, 216, 214, 0.2);
+  --text-color: #000;
+  --link-color: #00e;
+  --link-hover-color: #00e;
+  --background-color: #fff;
+  --overlay-background-color: #eee;
+  --highlight-background-color: #ccc;
   --download-color: #fff;
   --download-background-color: #093C61;
 
@@ -34,6 +33,7 @@
   --heading-font-size-m: 18px;
   --heading-font-size-s: 18px;
   --heading-font-size-xs: 16px;
+
   /* body sizes */
 
   --body-font-size-l: 18px;
@@ -60,8 +60,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	margin: 0;
 	padding: 0;
 	border: 0;
+  font: inherit;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 
