@@ -1,4 +1,4 @@
-# Lambweston Environment and Social Goverance Page
+# Lambweston Environment and Social Governance Page
 AEM Franklin implementation for https://esg.lambweston.com/
 
 ## Environments
