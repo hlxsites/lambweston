@@ -286,22 +286,15 @@ main img {
   height: 46px;
 }
 
-main .section {
-  padding: 0;
-  margin: 0;
-}
-
 @media (min-width: 600px) {
   main .section {
     padding: 64px 32px;
   }
 }
 
-@media (min-width: 900px) {
-  .section>div {
-    max-width: 1200px;
-    margin: auto;
-  }
+main .section {
+  padding: 0;
+  margin: 0;
 }
 
 /* section metadata */
@@ -400,8 +393,6 @@ main .section.download .columns-3-cols>div>div>a:last-child {
   width: 122px;
 }
 
-
-
 .section.highlight .icon.icon-icon11 {
   height: 121px;
   width: 82px;
@@ -422,4 +413,8 @@ main .section.download .columns-3-cols>div>div>a:last-child {
   margin: 0 auto;
   max-width: 862px;
   width: 100%;
+}
+
+footer {
+  display: none
 }
