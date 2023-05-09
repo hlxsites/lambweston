@@ -14,7 +14,8 @@
   /* fonts */
   --heading-font-family: "VAG Rounded W01", "Arial", "Helvetica", "sans-serif";
   --body-font-family: "Arial", "Helvetica", sans-serif;
-  --fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono", monospace;
+  --fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono",
+    monospace;
 
   /* colors */
   --text-color: #000;
@@ -24,7 +25,7 @@
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
   --download-color: #fff;
-  --download-background-color: #093C61;
+  --download-background-color: #093c61;
 
   /* sizes */
   --heading-font-size-xxl: 18px;
@@ -42,8 +43,6 @@
   /* nav height */
   --nav-height: 104px;
 }
-
-
 
 @media (min-width: 900px) {
   :root {
@@ -169,15 +168,13 @@ p {
   font-weight: 400;
 }
 
-
 a:any-link {
   color: var(--link-color);
   text-decoration: none;
 }
 
-
-em>a:any-link {
-  color: #E35205;
+em > a:any-link {
+  color: #e35205;
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
@@ -224,7 +221,7 @@ a.button.secondary,
 button.secondary {
   background-color: unset;
   border: 2px solid currentcolor;
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 main input {
@@ -317,7 +314,7 @@ main .section.download {
   color: var(--download-color);
   background-color: var(--download-background-color);
   border-radius: 60px 60px 0 0;
-  border-bottom: 68px solid #093C61;
+  border-bottom: 68px solid #093c61;
   padding: 50px 0 10px;
   width: 92vw;
   max-width: 1200px;
@@ -336,20 +333,15 @@ main .section.download {
     padding: 50px 40px 10px;
   }
 
-  .download .columns.columns-2-cols>div {
+  .download .columns.columns-2-cols > div {
     flex-direction: column;
   }
 
-  .columns.block.columns-3-cols>div>div {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-areas:
-      "one two"
-      "one three";
+  .columns.block.columns-3-cols > div > div {
     margin: 35px 0;
   }
 
-  .columns.block.columns-3-cols>div>div>a:first-child {
+  .columns.block.columns-3-cols > div > div > a:first-child {
     grid-area: one;
     margin: 0;
     margin-right: 20px;
@@ -368,8 +360,8 @@ main .section.download a {
   color: #fff;
 }
 
-main .section.download em>a {
-  color: #E35205;
+main .section.download em > a {
+  color: #e35205;
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
@@ -377,11 +369,11 @@ main .section.download em>a {
   font-style: normal;
 }
 
-main .section.download .columns-3-cols em>a {
-  color: #FFF;
+main .section.download .columns-3-cols em > a {
+  color: #fff;
 }
 
-main .section.download .columns-3-cols>div>div>a:last-child {
+main .section.download .columns-3-cols > div > div > a:last-child {
   font-size: 25px;
   font-weight: 700;
   line-height: 1;
@@ -416,5 +408,5 @@ main .section.download .columns-3-cols>div>div>a:last-child {
 }
 
 footer {
-  display: none
+  display: none;
 }
