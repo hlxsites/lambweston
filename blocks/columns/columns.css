@@ -1,9 +1,9 @@
-.columns.columns-2-cols>div {
+.columns.columns-2-cols > div {
   display: flex;
   flex-direction: row;
 }
 
-.columns.columns-2-cols>div>div:nth-child(1) {
+.columns.columns-2-cols > div > div:nth-child(1) {
   width: 454px;
   max-width: 100%;
 }
@@ -12,15 +12,15 @@
   width: 100%;
 }
 
-.columns>div>.columns-img-col {
+.columns > div > .columns-img-col {
   order: 0;
 }
 
-.columns>div>.columns-img-col img {
+.columns > div > .columns-img-col img {
   display: block;
 }
 
-.columns.card>div>div:first-child {
+.highlight .columns > div > div:first-child {
   width: 124px;
   flex-shrink: 0;
   margin-right: 30px;
@@ -30,36 +30,45 @@
   display: flex;
 }
 
-.columns.card>div>div>h2 {
+.highlight .columns > div > div > h2 {
   font-weight: 300;
-  color: #093C61;
+  color: #093c61;
   font-size: 24px;
   line-height: 22px;
-  border-bottom: 1px solid #E35205;
+  border-bottom: 1px solid #e35205;
   display: inline-block;
   margin-bottom: 10px;
 }
 
-.columns>div>div>h2 {
+.columns > div > div > h2 {
   font-weight: 400;
   line-height: 1.4;
 }
 
-main .section.highlight>div.columns-wrapper>div>div {
+main .section.highlight > div.columns-wrapper > div > div {
   display: flex;
   margin: 50px 0;
 }
 
-
-div.section.download.columns-container>div.columns-wrapper>div>div>div:nth-child(2) img {
+div.section.download.columns-container
+  > div.columns-wrapper
+  > div
+  > div
+  > div:nth-child(2)
+  img {
   width: 408px;
   height: auto;
   display: block;
   margin-bottom: 40px;
 }
 
-
-div.section.download.columns-container>div.columns-wrapper>div>div>div>p>a{
+div.section.download.columns-container
+  > div.columns-wrapper
+  > div
+  > div
+  > div
+  > p
+  > a {
   display: flex;
   align-items: flex-start;
   color: #fff;
@@ -69,29 +78,48 @@ div.section.download.columns-container>div.columns-wrapper>div>div>div>p>a{
   margin: 35px 0;
 }
 
-div.section.download.columns-container>div.columns-wrapper>div>div>div>p>a>span:first-child{
-width: 44px;
-flex-shrink: 0;
-margin-right: 20px;
+div.section.download.columns-container
+  > div.columns-wrapper
+  > div
+  > div
+  > div
+  > p
+  > a
+  > span:first-child {
+  width: 44px;
+  flex-shrink: 0;
+  margin-right: 20px;
 }
 
-div.section.download.columns-container>div.columns-wrapper>div>div>div>p>a>span>em{
-  color: #E35205;
+div.section.download.columns-container
+  > div.columns-wrapper
+  > div
+  > div
+  > div
+  > p
+  > a
+  > span
+  > em {
+  color: #e35205;
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
   display: block;
-  }
+}
 
-
-div.section.download.columns-container>div.default-content-wrapper>p:last-child span {
+div.section.download.columns-container
+  > div.default-content-wrapper
+  > p:last-child
+  span {
   width: 44px;
   height: 43px;
   flex-shrink: 0;
   margin-right: 20px;
 }
 
-div.section.download.columns-container>div.default-content-wrapper>p:first-child {
+div.section.download.columns-container
+  > div.default-content-wrapper
+  > p:first-child {
   font-size: 18px;
   line-height: 1.4;
   font-weight: 400;
@@ -102,16 +130,15 @@ div.section.download.columns-container>div.default-content-wrapper>p:first-child
   height: 44px;
 }
 
-.columns-3-cols.columns>div{
+.columns-3-cols.columns > div {
   display: flex;
 }
 
-
-.columns-3-cols.columns>div>div{
+.columns-3-cols.columns > div > div {
   margin-right: 75px;
 }
 
-.columns-3-cols.columns>div>div>a{
+.columns-3-cols.columns > div > div > a {
   display: flex;
   align-items: flex-start;
   color: #fff;
@@ -119,25 +146,24 @@ div.section.download.columns-container>div.default-content-wrapper>p:first-child
   font-weight: 700;
   line-height: 1;
   margin: 35px 0;
-
 }
 
-.columns-3-cols.columns>div>div>a>span:nth-child(1){
-width: 44px;
-flex-shrink: 0;
-margin-right: 20px;
+.columns-3-cols.columns > div > div > a > span:nth-child(1) {
+  width: 44px;
+  flex-shrink: 0;
+  margin-right: 20px;
 }
 
-.columns-3-cols.columns>div>div>a>span:nth-child(2)>em{
+.columns-3-cols.columns > div > div > a > span:nth-child(2) > em {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
   display: block;
-  }
+}
 
 @media (max-width: 1023px) {
-  .columns-3-cols.columns>div{
-    display:block;
+  .columns-3-cols.columns > div {
+    display: block;
   }
 }
