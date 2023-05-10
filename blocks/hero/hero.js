@@ -27,9 +27,6 @@ function updateHeroText() {
   insertAfter(parentEl, newEl);
 }
 
-window.addEventListener('resize', updateBackgroundImage);
-updateBackgroundImage();
-
 export default function decorate(block) {
   const pictureTag = block.querySelector('p > picture');
   pictureTag.parentNode.remove();
@@ -48,5 +45,6 @@ export default function decorate(block) {
   contentWrap.appendChild(pTag);
   heroContent.appendChild(contentWrap);
   block.appendChild(heroContent);
+  updateBackgroundImage();
   updateHeroText();
 }
