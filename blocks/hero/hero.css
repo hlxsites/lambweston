@@ -109,14 +109,14 @@
   }
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .hero.block {
     height: auto;
     background-size: cover;
   }
 }
 
-@media (max-width: 1023px) {
+@media only screen and (max-width: 1023px) {
   .hero.block h1 {
     font-size: 26px;
     line-height: 1;
@@ -164,7 +164,7 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .hero-content {
     align-items: flex-start;
   }
@@ -176,14 +176,6 @@
   .hero-spacer {
     width: 100vw;
     height: 30vw;
-  }
-
-  .content-wrap {
-    width: unset;
-    padding-bottom: 2vw;
-    margin-left: 9vw;
-    max-width: unset;
-    overflow: hidden;
   }
 
   .hero .hero-spacer p {
@@ -198,7 +190,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .dynamic-content {
     display: none;
   }
