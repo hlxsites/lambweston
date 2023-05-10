@@ -173,16 +173,16 @@ a:any-link {
   text-decoration: none;
 }
 
-em > a:any-link {
+/* em > a:any-link {
   color: #e35205;
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
   display: block;
-}
+} */
 
 /* buttons */
-a.button:any-link,
+/* a.button:any-link,
 button {
   font-family: var(--body-font-family);
   display: inline-block;
@@ -201,30 +201,30 @@ button {
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 30px;
-}
+} */
 
-a.button:hover,
+/* a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
   background-color: var(--link-hover-color);
   cursor: pointer;
-}
+} */
 
-button:disabled,
+/* button:disabled,
 button:disabled:hover {
   background-color: var(--overlay-background-color);
   cursor: unset;
-}
+} */
 
-a.button.secondary,
+/* a.button.secondary,
 button.secondary {
   background-color: unset;
   border: 2px solid currentcolor;
   color: var(--text-color);
-}
+} */
 
-main input {
+/* main input {
   font-size: 1.25rem;
   width: 100%;
   max-width: 50rem;
@@ -236,28 +236,28 @@ main input {
   border: 1px solid var(--text-color);
   color: var(--text-color);
   background-color: var(--background-color);
-}
+} */
 
-main input:hover {
+/* main input:hover {
   border: 1px solid var(--text-color);
-}
+} */
 
-main blockquote {
+/* main blockquote {
   font-style: italic;
   margin: 3rem;
   text-indent: -1rem;
   hanging-punctuation: first;
-}
+} */
 
-main blockquote p::before {
+/* main blockquote p::before {
   content: "“";
   line-height: 0;
-}
+} */
 
-main blockquote p::after {
+/* main blockquote p::after {
   content: "”";
   line-height: 0;
-}
+} */
 
 main img {
   max-width: 100%;
@@ -360,7 +360,7 @@ main .section.download a {
   color: #fff;
 }
 
-main .section.download em > a {
+/* main .section.download em > a {
   color: #e35205;
   font-size: 18px;
   font-weight: 500;
@@ -371,7 +371,7 @@ main .section.download em > a {
 
 main .section.download .columns-3-cols em > a {
   color: #fff;
-}
+} */
 
 main .section.download .columns-3-cols > div > div > a:last-child {
   font-size: 25px;
