@@ -5,9 +5,7 @@ function updateBackgroundImage() {
   if (window.innerWidth < 750) {
     sourceTag = pictureTag.querySelector('source:nth-child(2)');
   }
-  heroTag.style.backgroundImage = `url(${
-    sourceTag.srcset
-  })`;
+  heroTag.style.backgroundImage = `url(${sourceTag.srcset})`;
 }
 
 function insertAfter(referenceNode, newNode) {
@@ -20,7 +18,7 @@ function updateHeroText() {
   const content = paraEl.innerHTML;
   const parentEl = document.querySelector('.hero-wrapper');
   const newEl = document.createElement('div');
-  newEl.classList.add('dynamic-content');
+  newEl.classList.add('dynamic-content', 'section', 'highlight');
   const newParaEl = document.createElement('p');
   newParaEl.textContent = content;
   newEl.appendChild(newParaEl);

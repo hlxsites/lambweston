@@ -11,7 +11,7 @@
   --link-hover-color: #00e;
   --background-color: #fff;
   --overlay-background-color: #eee;
-  --highlight-background-color: #ccc;
+  --highlight-background-color: #d9d8d633;
   --download-color: #fff;
   --download-background-color: #093c61;
 
@@ -52,6 +52,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   font-size: var(--body-font-size-m);
   line-height: 1.4;
@@ -75,6 +80,11 @@ p {
   font-size: 18px;
   line-height: 1.4;
   font-weight: 400;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font-family);
 }
 
 a:any-link {
@@ -144,7 +154,10 @@ main .section.download {
 
 @media only screen and (max-width: 1024px) {
   main .section.highlight {
-    background-color: var(--background-color);
+    background-color: var(--highlight-background-color);
+    padding: 0 4vw;
+    box-sizing: border-box;
+    padding-top: 36px;
   }
 
   main .section.download {
