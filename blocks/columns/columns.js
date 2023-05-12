@@ -19,6 +19,7 @@ function joinLinkstoOne(links) {
     });
 
     firstChild.appendChild(span);
+    firstChild.setAttribute('target', '_blank');
 
     // Replace the original parent element with the new <a> element
     parentElement.innerHTML = firstChild.outerHTML;
