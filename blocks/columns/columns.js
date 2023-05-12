@@ -1,10 +1,13 @@
 import { decorateIcons } from '../../scripts/lib-franklin.js';
 
 function addIcontoLink(links) {
-  const spanIcon = document.createElement('span');
-  spanIcon.classList.add('icon', 'icon-download');
-  links.insertBefore(spanIcon, links.firstChild);
-  decorateIcons(links);
+  const parentElement = links.closest('.section.download');
+  if (parentElement) {
+    const spanIcon = document.createElement('span');
+    spanIcon.classList.add('icon', 'icon-download');
+    links.insertBefore(spanIcon, links.firstChild);
+    decorateIcons(links);
+  }
 }
 
 function joinLinkstoOne(links) {
