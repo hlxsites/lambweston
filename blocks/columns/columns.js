@@ -1,28 +1,40 @@
+import { decorateIcons } from '../../scripts/lib-franklin.js';
+
+function addIcontoLink(links) {
+  const spanIcon = document.createElement('span');
+  spanIcon.classList.add('icon', 'icon-download');
+  links.insertBefore(spanIcon, links.firstChild);
+  decorateIcons(links);
+}
+
 function joinLinkstoOne(links) {
   if (links.length > 1 && links.every((link) => link.getAttribute('href') === links[0].getAttribute('href'))) {
-    const span = document.createElement('span');
     const firstChild = links[0];
-    const { parentElement } = firstChild;
-
-    // Remove the first <a> element from the links array
-    links.shift();
+    const parentNode = firstChild.parentNode.tagName === 'EM' ? firstChild.parentNode.parentNode : firstChild.parentNode;
+    const singleLink = document.createElement('a');
+    singleLink.href = firstChild.href;
+    const span = document.createElement('span');
 
     // Move all child nodes of the <a> elements to the new <span> element
     links.forEach((link) => {
-      if (link.parentNode.tagName === 'EM') {
-        const emTag = document.createElement('em');
-        emTag.innerHTML = link.innerHTML;
-        span.innerHTML += emTag.outerHTML;
-      } else {
-        span.innerHTML += link.innerHTML;
-      }
+      const contentNode = link.parentNode.tagName === 'EM' ? document.createElement('em') : document.createElement('span');
+      contentNode.innerHTML = link.innerHTML;
+      span.appendChild(contentNode);
     });
 
-    firstChild.appendChild(span);
-    firstChild.setAttribute('target', '_blank');
-
-    // Replace the original parent element with the new <a> element
-    parentElement.innerHTML = firstChild.outerHTML;
+    singleLink.appendChild(span);
+    addIcontoLink(singleLink);
+    singleLink.target = '_blank';
+    parentNode.innerHTML = '';
+    parentNode.appendChild(singleLink);
+  } else if (links.length === 1) {
+    const anchorElement = links[0];
+    const spanElement = document.createElement('span');
+    spanElement.innerHTML = anchorElement.innerHTML;
+    anchorElement.innerHTML = '';
+    anchorElement.target = '_blank';
+    anchorElement.appendChild(spanElement);
+    addIcontoLink(anchorElement);
   }
 }
 

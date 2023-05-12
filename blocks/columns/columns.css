@@ -91,15 +91,7 @@ div.section.download.columns-container
   margin-right: 20px;
 }
 
-div.section.download.columns-container
-  > div.columns-wrapper
-  > div
-  > div
-  > div
-  > p
-  > a
-  > span
-  > em {
+.download .columns-2-cols.columns a em {
   color: #e35205;
   font-size: 18px;
   font-weight: 500;
