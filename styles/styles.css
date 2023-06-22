@@ -8,6 +8,8 @@
   /* colors */
   --text-color: #000;
   --link-color: #00e;
+  --download-link-color: #F05705;
+  --highlight-color: #fff;
   --link-hover-color: #00e;
   --background-color: #fff;
   --overlay-background-color: #eee;
