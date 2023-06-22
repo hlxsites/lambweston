@@ -8,6 +8,8 @@
   /* colors */
   --text-color: #000;
   --link-color: #00e;
+  --download-link-color: #F05705;
+  --highlight-color: #fff;
   --link-hover-color: #00e;
   --background-color: #fff;
   --overlay-background-color: #eee;
@@ -154,10 +156,11 @@ main .section.download {
 
 @media only screen and (max-width: 1024px) {
   main .section.highlight {
-    background-color: var(--highlight-background-color);
+    background-color: var(--background-color);
     padding: 0 4vw;
     box-sizing: border-box;
     padding-top: 36px;
+    padding-bottom: 75px;
   }
 
   main .section.download {
@@ -200,21 +203,6 @@ main .section.download .columns-3-cols > div > div > a:last-child {
   line-height: 1;
 }
 
-.section.highlight .icon {
-  display: inline-block;
-  height: 122px;
-  width: 122px;
-}
-
-.section.highlight .icon.icon-icon2 {
-  height: 87px;
-  width: 78px;
-}
-
-.section.highlight .icon.icon-icon3 {
-  height: 69px;
-  width: 55px;
-}
 
 .section.download .columns-wrapper,
 .section.download .default-content-wrapper {
