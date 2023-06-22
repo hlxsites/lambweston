@@ -93,8 +93,8 @@ div.section.download.columns-container
 
 .download .columns-2-cols.columns a em {
   color: #e35205;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 19px;
+  font-weight: 700;
   text-transform: uppercase;
   display: block;
 }
@@ -152,6 +152,27 @@ div.section.download.columns-container
   font-weight: 500;
   text-transform: uppercase;
   display: block;
+}
+
+.columns.with-icons > div > div.columns-img-col > picture > img {
+  width: 75px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.columns.with-icons > div:nth-child(2) > div.columns-img-col > picture > img {
+  width: 78px;
+}
+
+.columns.with-icons > div:last-child > div.columns-img-col > picture > img {
+  width: 120px;
+}
+
+.columns.with-icons > div > div.columns-img-col {
+  width: 124px;
+  flex-shrink: 0;
+  margin-right: 30px;
 }
 
 @media (max-width: 1023px) {
